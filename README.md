@@ -1,7 +1,7 @@
 nav.js
 ===========================
 
-`nav.js` is a JavaScript library for creating an opening and closing navbar. It provides all of the logic necessary, you just provide the styles!
+`nav.js` is a JavaScript library for creating an opening and closing navbar. It provides all of the logic necessary, you just provide the styles!  And, at just **612 bytes** minified & gzipped, it won't hurt your site's load time.
 
 ## Quick Start
 
