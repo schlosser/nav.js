@@ -113,9 +113,13 @@
   }
 
   /**
+   * Closes the nav, removing the `nav-open` class on both the <body> and on
+   * the navbar itself.
    *
+   * Note: the class prefix `nav` can be modified through the `classPrefix`
+   *   parameter to the `new Nav()` constructor.
    */
-  Nav.prototype._close = function() {
+  Nav.prototype.close = function() {
     this.settings.beforeClose(
       function resolve() {
         this.nav.className = this.nav.className.replace(' ' + this.settings.classPrefix + '-open', '');
@@ -129,9 +133,13 @@
   };
 
   /**
-   * Opens the nav toggle
+   * Opens the nav, placing the `nav-open` class on both the <body> and on the
+   * navbar itself.
+   *
+   * Note: the class prefix `nav` can be modified through the `classPrefix`
+   *   parameter to the `new Nav()` constructor.
    */
-  Nav.prototype._open = function() {
+  Nav.prototype.open = function() {
     this.settings.beforeOpen(
       function resolve() {
         this.nav.className += ' ' + this.settings.classPrefix + '-open';
@@ -159,9 +167,9 @@
       e.preventDefualt();
 
       if (_hasClass(nav, 'open')) {
-        _this._close();
+        _this.close();
       } else {
-        _this._open();
+        _this.open();
       }
     };
     return onClick;

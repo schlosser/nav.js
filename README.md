@@ -168,4 +168,20 @@ Enable the nav toggle.
 
 Disables the nav toggle, and close the navbar.
 
+### open()
+
+Opens the nav, adding the `nav-open` class on both the <body> and on 
+the navbar itself.
+
+> Note: the class prefix `nav` can be modified through the `classPrefix`
+> parameter to the `new Nav()` constructor.
+
+### close()
+
+Closes the nav, removing the `nav-open` class on both the <body> and on 
+the navbar itself.
+
+> Note: the class prefix `nav` can be modified through the `classPrefix`
+> parameter to the `new Nav()` constructor.
+
 [download]: https://github.com/schlosser/nav.js/releases/download/v0.1/nav.min.js
